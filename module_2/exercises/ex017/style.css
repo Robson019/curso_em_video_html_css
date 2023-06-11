@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(205, 255, 203);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(4, 109, 0);
+}
+
+/* 
+    em HTML id = em CSS #
+    em HTML class = em CSS . 
+*/
+
+#main {
+    background-color: rgb(4, 109, 0);
+    text-align: center;
+    color: #ffffff;
+}
+
+h2 {
+    color: rgb(73, 77, 49); 
+}
+
+.basic {
+    color: #3c805e;
+}
+
+.intermediary {
+    color: #80793c;
+}
+
+.hard {
+    color: #803c3c;
+}
+
+.emphasis {
+    background-color: #c5c56070;
+}

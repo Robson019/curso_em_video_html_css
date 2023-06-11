@@ -1,0 +1,38 @@
+/* Color Theme Swatches in Hex */
+.Poseidon-1-hex { color: #DAFDBA; }
+.Poseidon-2-hex { color: #9AEBA3; }
+.Poseidon-3-hex { color: #45C4B0; }
+.Poseidon-4-hex { color: #13678A; }
+.Poseidon-5-hex { color: #003a57; }
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /* height: 100%; */
+}
+
+body {
+    background-image: linear-gradient(to bottom, #DAFDBA, #9AEBA3);
+}
+
+main {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #65755691;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #003a57;
+    text-shadow: 1px 1px 2px #00141d80;
+}
+
+h2 {
+    color: #13678A;
+}
+
+p {
+    text-align: justify;
+}

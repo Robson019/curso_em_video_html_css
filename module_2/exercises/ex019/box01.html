@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        h1 { 
+            /* box-level */
+            /* display: inline; para poder tornar o box em inline */
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border: 10px solid darkslategray;
+            padding: 10px; /* todos os lados 10px */
+            /* dois valores é 10px cima baixo e 20px direita esquerda */
+            
+            margin: 20px auto 40px auto;
+            outline: 5px dashed salmon;
+        }
+
+        a {
+            /* inline-level */
+            border: 10px groove red;
+            padding: 10px 10px 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box-level example</h1>
+    <p>Paragraphs are examples of box-level too, but the <a href="#">links are examples of inline-level box</a> lets see how this works.</p>
+</body>
+</html>

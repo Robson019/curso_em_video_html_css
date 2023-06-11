@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical alignment</title>
+    <style>
+        #container {
+            /* o container deverá ter um position: relative; */
+            position: relative;
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+            background-image: url('images/target001.png');
+            background-size: 100% 100%;
+        }
+        #content {
+            /* já o conteúdo terá position: absolute; */
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            background-image: url('images/target001.png');
+            background-size: 100% 100%;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+            /* é como se fosse x e y */
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="content">
+
+        </article>
+    </section>
+</body>
+</html>
