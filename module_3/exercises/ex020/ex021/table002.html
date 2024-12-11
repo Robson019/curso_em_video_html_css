@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        /* zebra effect (even or odd, 2n, 3n...) */
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        td.number {
+            text-align: right;
+        }
+    </style>
+    <title>Tables</title>
+</head>
+<body>
+    <h1>Using big tables</h1>
+    <!-- 
+        Big Table hierarchy
+        Table
+            CAPTION
+            THEAD
+                Table Row, Table Data, Table Header
+            TBODY
+                Table Row, Table Data, Table Header
+            TFOOT
+                Table Row, Table Data, Table Header
+    -->
+    <table>
+        <caption>Federative Units Population</caption>
+        <thead>
+            <tr>
+                <th scope="col">State</th>
+                <th scope="col" style="width: 50px;">Population</th>  
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="number">45.919.049</td>  
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="number">21.168.791</td>  
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">17.264.943</td>  
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total</th>
+                <td class="number"><strong>84.352.783</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, excepturi et quod alias aliquid minima placeat repellendus libero sequi iste mollitia aliquam? Quam corporis nesciunt unde architecto quae, inventore ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero incidunt sint iusto expedita nemo accusamus placeat? Dolores, vel odit. Debitis tempora voluptatibus doloremque eveniet fuga a quae excepturi dolores in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestiae eligendi rerum eum fugit minus, reiciendis eveniet nulla? Corporis nesciunt similique placeat praesentium. Hic omnis ut dolor, alias odit voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita itaque nulla magni neque aliquid. Esse saepe veritatis voluptatum illum aperiam rem, officia tempore excepturi, quisquam vel deleniti nulla? Nostrum, pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptatem libero, repellendus dicta aliquam fugiat commodi blanditiis modi sequi maiores quia, eos architecto minus ut. Accusantium illum nostrum in modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam assumenda similique, dolorem saepe, nobis est voluptate incidunt molestiae debitis libero accusamus, nihil illo? Voluptatum, voluptates odit praesentium sapiente reiciendis quos.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, excepturi et quod alias aliquid minima placeat repellendus libero sequi iste mollitia aliquam? Quam corporis nesciunt unde architecto quae, inventore ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero incidunt sint iusto expedita nemo accusamus placeat? Dolores, vel odit. Debitis tempora voluptatibus doloremque eveniet fuga a quae excepturi dolores in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestiae eligendi rerum eum fugit minus, reiciendis eveniet nulla? Corporis nesciunt similique placeat praesentium. Hic omnis ut dolor, alias odit voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita itaque nulla magni neque aliquid. Esse saepe veritatis voluptatum illum aperiam rem, officia tempore excepturi, quisquam vel deleniti nulla? Nostrum, pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quia nostrum porro itaque sunt at. Maiores exercitationem voluptatibus earum dolor mollitia facilis labore optio possimus, praesentium, eligendi reprehenderit harum ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam assumenda similique, dolorem saepe, nobis est voluptate incidunt molestiae debitis libero accusamus, nihil illo? Voluptatum, voluptates odit praesentium sapiente reiciendis quos.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, excepturi et quod alias aliquid minima placeat repellendus libero sequi iste mollitia aliquam? Quam corporis nesciunt unde architecto quae, inventore ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero incidunt sint iusto expedita nemo accusamus placeat? Dolores, vel odit. Debitis tempora voluptatibus doloremque eveniet fuga a quae excepturi dolores in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestiae eligendi rerum eum fugit minus, reiciendis eveniet nulla? Corporis nesciunt similique placeat praesentium. Hic omnis ut dolor, alias odit voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita itaque nulla magni neque aliquid. Esse saepe veritatis voluptatum illum aperiam rem, officia tempore excepturi, quisquam vel deleniti nulla? Nostrum, pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quia nostrum porro itaque sunt at. Maiores exercitationem voluptatibus earum dolor mollitia facilis labore optio possimus, praesentium, eligendi reprehenderit harum ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam assumenda similique, dolorem saepe, nobis est voluptate incidunt molestiae debitis libero accusamus, nihil illo? Voluptatum, voluptates odit praesentium sapiente reiciendis quos.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, excepturi et quod alias aliquid minima placeat repellendus libero sequi iste mollitia aliquam? Quam corporis nesciunt unde architecto quae, inventore ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero incidunt sint iusto expedita nemo accusamus placeat? Dolores, vel odit. Debitis tempora voluptatibus doloremque eveniet fuga a quae excepturi dolores in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestiae eligendi rerum eum fugit minus, reiciendis eveniet nulla? Corporis nesciunt similique placeat praesentium. Hic omnis ut dolor, alias odit voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita itaque nulla magni neque aliquid. Esse saepe veritatis voluptatum illum aperiam rem, officia tempore excepturi, quisquam vel deleniti nulla? Nostrum, pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quia nostrum porro itaque sunt at. Maiores exercitationem voluptatibus earum dolor mollitia facilis labore optio possimus, praesentium, eligendi reprehenderit harum ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam assumenda similique, dolorem saepe, nobis est voluptate incidunt molestiae debitis libero accusamus, nihil illo? Voluptatum, voluptates odit praesentium sapiente reiciendis quos.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, excepturi et quod alias aliquid minima placeat repellendus libero sequi iste mollitia aliquam? Quam corporis nesciunt unde architecto quae, inventore ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero incidunt sint iusto expedita nemo accusamus placeat? Dolores, vel odit. Debitis tempora voluptatibus doloremque eveniet fuga a quae excepturi dolores in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestiae eligendi rerum eum fugit minus, reiciendis eveniet nulla? Corporis nesciunt similique placeat praesentium. Hic omnis ut dolor, alias odit voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita itaque nulla magni neque aliquid. Esse saepe veritatis voluptatum illum aperiam rem, officia tempore excepturi, quisquam vel deleniti nulla? Nostrum, pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quia nostrum porro itaque sunt at. Maiores exercitationem voluptatibus earum dolor mollitia facilis labore optio possimus, praesentium, eligendi reprehenderit harum ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam assumenda similique, dolorem saepe, nobis est voluptate incidunt molestiae debitis libero accusamus, nihil illo? Voluptatum, voluptates odit praesentium sapiente reiciendis quos.</p>
+</body>
+</html>
