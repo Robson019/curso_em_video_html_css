@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        col.c_name {
+            background-color: chartreuse;
+        }
+        col.c_sex_age {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table exercise - Grouping with colGroup</h1>
+    <table>
+        <colgroup>
+            <col class="c_name">
+            <col class="c_sex_age" span="2">
+            <col class="c_prof">
+        </colgroup>
+        <caption>Register</caption>
+        <tr>
+            <th scope="col">name</th>
+            <th scope="col">Sex</th>
+            <th scope="col">Age</th>
+            <th scope="col">Work</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Journalist</td>
+        </tr>
+        <tr>
+            <td>Cláudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programmer</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+        </tr>
+    </table>
+</body>
+</html>
